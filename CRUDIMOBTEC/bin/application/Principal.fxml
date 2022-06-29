@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.212" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PrincipalController">
+  <tabs>
+    <Tab text="Tela do Imovel">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="tfidImovel" layoutX="120.0" layoutY="30.0" onAction="#acaoImovel" prefHeight="25.0" prefWidth="165.0" />
+                  <Label layoutX="36.0" layoutY="34.0" text="Id do Imovel" />
+                  <TextField fx:id="tfEnderecoImov" layoutX="162.0" layoutY="64.0" onAction="#acaoImovel" prefHeight="25.0" prefWidth="276.0" />
+                  <Label layoutX="36.0" layoutY="68.0" text="Endereço do Imovel" />
+                  <Button fx:id="btnInserirImovel" layoutX="36.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoImovel" text="Inserir" />
+                  <Button fx:id="btnBuscarImovel" layoutX="300.0" layoutY="30.0" mnemonicParsing="false" onAction="#acaoImovel" text="Buscar" />
+                  <Button fx:id="btnAtualizarImovel" layoutX="151.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoImovel" text="Atualizar" />
+                  <Button fx:id="btnExcluirImovel" layoutX="274.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoImovel" text="Excluir" />
+                  <Button fx:id="btnListarImovel" layoutX="394.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoImovel" text="Listar" />
+                  <ScrollPane layoutX="26.0" layoutY="200.0">
+                     <content>
+                        <TextArea fx:id="taListaImoveis" prefHeight="180.0" prefWidth="553.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="36.0" layoutY="110.0" text="Bairro" />
+                  <TextField fx:id="tfBairro" layoutX="80.0" layoutY="106.0" onAction="#acaoImovel" prefHeight="25.0" prefWidth="145.0" />
+                  <Label layoutX="252.0" layoutY="110.0" text="CEP" />
+                  <TextField fx:id="tfCEP" layoutX="290.0" layoutY="106.0" onAction="#acaoImovel" prefHeight="25.0" prefWidth="148.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Tela do Corretor">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="tfidCorretor" layoutX="277.0" layoutY="23.0" onAction="#acaoCorretor" prefHeight="25.0" prefWidth="168.0" />
+                  <Label layoutX="166.0" layoutY="27.0" text="Creci Corretor" />
+                  <TextField fx:id="tfNomeCorretor" layoutX="277.0" layoutY="53.0" onAction="#acaoCorretor" prefHeight="25.0" prefWidth="289.0" />
+                  <Label layoutX="166.0" layoutY="57.0" prefHeight="9.0" prefWidth="98.0" text="Nome do Corretor" />
+                  <Button fx:id="btnInserirCorretor" layoutX="88.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoCorretor" text="Inserir" />
+                  <Button fx:id="btnBuscarCorretor" layoutX="454.0" layoutY="23.0" mnemonicParsing="false" onAction="#acaoCorretor" text="Buscar" />
+                  <Button fx:id="btnAtualizarCorretor" layoutX="214.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoCorretor" text="Atualizar" />
+                  <Button fx:id="btnExcluirCorretor" layoutX="346.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoCorretor" text="Excluir" />
+                  <Button fx:id="btnListarCorretor" layoutX="479.0" layoutY="161.0" mnemonicParsing="false" onAction="#acaoCorretor" text="Listar" />
+                  <ScrollPane layoutX="26.0" layoutY="200.0">
+                     <content>
+                        <TextArea fx:id="taListaCorretor" prefHeight="180.0" prefWidth="553.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="166.0" layoutY="87.0" text="Região de atuação" />
+                  <TextField fx:id="tfRegiaoCorretor" layoutX="277.0" layoutY="83.0" onAction="#acaoCorretor" prefHeight="25.0" prefWidth="171.0" />
+                  <Label layoutX="166.0" layoutY="115.0" text="Telefone" />
+                  <TextField fx:id="tfTelefoneCorretor" layoutX="276.0" layoutY="111.0" onAction="#acaoCorretor" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="tfCodImovel" layoutX="524.0" layoutY="111.0" onAction="#acaoCorretor" prefHeight="25.0" prefWidth="69.0" />
+                  <Label layoutX="459.0" layoutY="115.0" text="Cod Imovel" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
